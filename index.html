@@ -1,340 +1,226 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Utsab Ghosh - Software Engineer Resume</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        
-        body {
-            font-family: 'Calibri', 'Arial', sans-serif;
-            line-height: 1.5;
-            color: #e5e5e5;
-            background: #0d0d0d;
-            padding: 20px;
-            font-size: 11pt;
-        }
-        
-        .container {
-            /* A4 dimensions: 210mm x 297mm */
-            width: 210mm;
-            min-height: 297mm;
-            margin: 0 auto;
-            background: #1c1c1c;
-            padding: 20mm 20mm;
-            box-shadow: 
-                -8px 0 15px -5px rgba(255, 255, 255, 0.3),
-                8px 0 15px -5px rgba(255, 255, 255, 0.3),
-                0 0 20px rgba(0,0,0,0.5);
-        }
-        
-        .header {
-            text-align: center;
-            margin-bottom: 20px;
-            border-bottom: 3px solid #ffffff;
-            padding-bottom: 15px;
-        }
-        
-        .header h1 {
-            font-size: 28pt;
-            font-weight: bold;
-            margin-bottom: 8px;
-            color: #ffffff;
-            letter-spacing: 1px;
-        }
-        
-        .contact-info {
-            font-size: 10pt;
-            color: #b5b5b5;
-            line-height: 1.6;
-        }
-        
-        .contact-info a {
-            color: #ffffff;
-            text-decoration: none;
-        }
-        
-        .section {
-            margin-bottom: 20px;
-        }
-        
-        .section-title {
-            font-size: 13pt;
-            font-weight: bold;
-            color: #ffffff;
-            text-transform: uppercase;
-            margin-bottom: 10px;
-            padding-bottom: 3px;
-            border-bottom: 2px solid #ffffff;
-            letter-spacing: 0.5px;
-        }
-        
-        .content-block {
-            margin-bottom: 15px;
-        }
-        
-        .job-header {
-            margin-bottom: 8px;
-        }
-        
-        .company-title {
-            font-weight: bold;
-            font-size: 11pt;
-            color: #ffffff;
-        }
-        
-        .job-title {
-            font-weight: bold;
-            font-size: 11pt;
-            color: #ffffff;
-        }
-        
-        .location-date {
-            font-size: 10pt;
-            color: #999999;
-            font-style: italic;
-            margin-top: 2px;
-        }
-        
-        .job-details {
-            display: flex;
-            justify-content: space-between;
-            align-items: baseline;
-            margin-bottom: 5px;
-        }
-        
-        .bullet-list {
-            margin-left: 20px;
-            margin-top: 8px;
-        }
-        
-        .bullet-list li {
-            margin-bottom: 6px;
-            line-height: 1.5;
-            text-align: justify;
-            color: #d5d5d5;
-        }
-        
-        .skills-section {
-            margin-top: 8px;
-        }
-        
-        .skill-category {
-            margin-bottom: 8px;
-            line-height: 1.6;
-            color: #d5d5d5;
-        }
-        
-        .skill-category strong {
-            font-weight: bold;
-            color: #ffffff;
-        }
-        
-        .education-block {
-            margin-bottom: 10px;
-            color: #d5d5d5;
-        }
-        
-        .education-block strong {
-            font-weight: bold;
-            color: #ffffff;
-        }
-        
-        .project-header {
-            font-weight: bold;
-            margin-bottom: 5px;
-            color: #ffffff;
-        }
-        
-        .project-meta {
-            font-size: 10pt;
-            color: #999999;
-            font-style: italic;
-            margin-bottom: 8px;
-        }
-        
-        .project-description {
-            margin-bottom: 8px;
-            line-height: 1.5;
-            color: #d5d5d5;
-        }
-        
-        @media print {
-            body {
-                background: white;
-                padding: 0;
-            }
-            
-            .container {
-                box-shadow: none;
-                width: 210mm;
-                min-height: 297mm;
-                margin: 0;
-            }
-            
-            .section {
-                page-break-inside: avoid;
-            }
-        }
-        
-        @media (max-width: 768px) {
-            body {
-                padding: 10px;
-            }
-            
-            .container {
-                width: 100%;
-                padding: 15mm;
-                border-left: 2px solid #2c5f8d;
-                border-right: 2px solid #2c5f8d;
-            }
-            
-            .header h1 {
-                font-size: 22pt;
-            }
-            
-            .job-details {
-                flex-direction: column;
-            }
-        }
-        
-        /* ATS-Friendly: Clear semantic structure */
-        h1, h2, h3 {
-            font-weight: bold;
-        }
-        
-        /* Ensure text is selectable and parseable */
-        * {
-            -webkit-font-smoothing: antialiased;
-            -moz-osx-font-smoothing: grayscale;
-        }
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Utsab Ghosh - Backend Software Engineer</title>
+
+<style>
+/* ===== THEME (UNCHANGED) ===== */
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+    font-family: 'Calibri', 'Arial', sans-serif;
+    line-height: 1.5;
+    color: #e5e5e5;
+    background: #0d0d0d;
+    padding: 20px;
+    font-size: 11pt;
+}
+
+.container {
+    width: 210mm;
+    min-height: 297mm;
+    margin: 0 auto;
+    background: #1c1c1c;
+    padding: 20mm;
+    box-shadow:
+        -8px 0 15px -5px rgba(255,255,255,0.3),
+        8px 0 15px -5px rgba(255,255,255,0.3),
+        0 0 20px rgba(0,0,0,0.5);
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 20px;
+    border-bottom: 3px solid #ffffff;
+    padding-bottom: 15px;
+}
+
+.header h1 {
+    font-size: 28pt;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+.contact-info {
+    font-size: 10pt;
+    color: #b5b5b5;
+    line-height: 1.6;
+}
+
+.contact-info a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.section {
+    margin-bottom: 20px;
+}
+
+.section-title {
+    font-size: 13pt;
+    font-weight: bold;
+    color: #ffffff;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    border-bottom: 2px solid #ffffff;
+}
+
+.bullet-list {
+    margin-left: 20px;
+}
+
+.bullet-list li {
+    margin-bottom: 6px;
+    color: #d5d5d5;
+}
+
+.job-details {
+    display: flex;
+    justify-content: space-between;
+}
+
+.company-title,
+.job-title,
+.project-header {
+    font-weight: bold;
+    color: #ffffff;
+}
+
+.location-date,
+.project-meta {
+    font-size: 10pt;
+    color: #999999;
+    font-style: italic;
+}
+
+.skill-category {
+    margin-bottom: 6px;
+}
+
+.skill-category strong {
+    color: #ffffff;
+}
+
+.education-block strong {
+    color: #ffffff;
+}
+
+@media print {
+    body { background: white; padding: 0; }
+    .container { box-shadow: none; margin: 0; }
+}
+</style>
 </head>
+
 <body>
-    <div class="container">
-        <!-- HEADER SECTION -->
-        <header class="header">
-            <h1>UTSAB GHOSH</h1>
-            <div class="contact-info">
-                Kolkata, India | <a href="mailto:utsab.ghosh96@gmail.com">utsab.ghosh96@gmail.com</a> | +91 9564449544<br>
-                <a href="https://linkedin.com/in/utsab96">linkedin.com/in/utsab96</a> | 
-                <a href="https://github.com/Utsab96">github.com/Utsab96</a> | 
-                <a href="https://hackerrank.com/profile/utsab_ghosh96">hackerrank.com/profile/utsab_ghosh96</a>
-            </div>
-        </header>
-        
-        <!-- PROFESSIONAL SUMMARY -->
-        <section class="section">
-            <h2 class="section-title">Professional Summary</h2>
-            <div class="content-block">
-                <ul class="bullet-list">
-                    <li>Experienced backend developer specializing in Node.js, Express.js, and Python frameworks (FastAPI, Flask) with expertise in microservices architecture, API development, third-party integrations, and system optimization</li>
-                    <li>Skilled in API design, microservices architecture, database modeling, and AI-driven integrations using OpenAI, Gemini, Perplexity, and Eleven Labs APIs</li>
-                    <li>Proficient with PostgreSQL, MongoDB, Supabase, and Firebase, focusing on scalability, indexing, and performance optimization</li>
-                    <li>Strong expertise in unit testing (Jest), code quality management (SonarQube), and containerization (Docker)</li>
-                    <li>Hands-on experience with CI/CD pipelines using GitHub Actions, GitLab CI, and Jenkins, implementing distributed and event-driven architectures</li>
-                </ul>
-            </div>
-        </section>
-        
-        <!-- TECHNICAL SKILLS -->
-        <section class="section">
-            <h2 class="section-title">Technical Skills</h2>
-            <div class="skills-section">
-                <div class="skill-category">
-                    <strong>Programming Languages:</strong> JavaScript, Python, SQL, ES6
-                </div>
-                <div class="skill-category">
-                    <strong>Backend Technologies:</strong> Node.js, Express.js, FastAPI, Flask
-                </div>
-                <div class="skill-category">
-                    <strong>Databases & Cloud:</strong> PostgreSQL, Supabase, Firebase, MongoDB
-                </div>
-                <div class="skill-category">
-                    <strong>Testing & Code Quality:</strong> Jest, SonarQube
-                </div>
-                <div class="skill-category">
-                    <strong>Tools & DevOps:</strong> Git, GitLab, Postman, Docker, Cron Jobs, GitHub Actions, Jenkins
-                </div>
-                <div class="skill-category">
-                    <strong>AI & Automation:</strong> OpenAI API, Perplexity API, Gemini API, Eleven Labs, Monday.com API, Vapi, AI Prompt Engineering
-                </div>
-                <div class="skill-category">
-                    <strong>Computer Vision:</strong> YOLO-World, YOLO11VN-Face, OpenCV, RTSP Stream Processing, Machine Learning
-                </div>
-            </div>
-        </section>
-        
-        <!-- PROFESSIONAL EXPERIENCE -->
-        <section class="section">
-            <h2 class="section-title">Professional Experience</h2>
-            
-            <div class="content-block">
-                <div class="job-header">
-                    <div class="job-details">
-                        <div>
-                            <div class="company-title">WEB SPIDERS INDIA PVT. LTD.</div>
-                            <div class="job-title">Software Engineer</div>
-                        </div>
-                        <div class="location-date">December 2024 – Present</div>
-                    </div>
-                </div>
-                <ul class="bullet-list">
-                    <li>Designed and developed scalable backend APIs using Node.js, Express.js, and PostgreSQL, integrating with Supabase, Firebase, and Monday.com for real-time data synchronization</li>
-                    <li>Implemented AI automation pipelines using OpenAI, Perplexity, and Gemini APIs, transforming unstructured news and candidate data into structured impact analysis</li>
-                    <li>Built AI-based recruiting tools integrating Vapi voice assistants for automated interviews, Eleven Labs for speech synthesis, and Supabase for data storage</li>
-                    <li>Developed cron-based background jobs for task scheduling, push notifications (FCM), and backend process optimization with enhanced fault tolerance</li>
-                    <li>Developed object detection and face recognition modules using YOLO-World and YOLO11VN-Face integrated with Flask/FastAPI, achieving efficient RTSP stream processing without GPU</li>
-                    <li>Enhanced system performance and observability through SonarQube, Jest, and Dockerized microservices, ensuring high maintainability and code quality</li>
-                    <li>Collaborated closely with cross-functional AI and frontend teams to deliver data-driven dashboards and automation-first backend solutions for enterprise clients</li>
-                </ul>
-            </div>
-        </section>
-        
-        <!-- PROJECTS -->
-        <section class="section">
-            <h2 class="section-title">Key Projects</h2>
-            
-            <div class="content-block">
-                <div class="project-header">Gecko – AI Recruiter Automation Platform</div>
-                <div class="project-meta">Web Spiders India Pvt. Ltd. | April 2024 – Present</div>
-                <div class="project-description">
-                    <strong>Product Overview:</strong> An AI-powered recruitment platform leveraging voice AI and Large Language Models to automate candidate screening processes.
-                </div>
-                <div class="project-description">
-                    <strong>Key Contributions:</strong>
-                </div>
-                <ul class="bullet-list">
-                    <li>Developed backend APIs with Node.js and PostgreSQL, integrating Supabase for comprehensive data management and real-time synchronization</li>
-                    <li>Built voice interview automation system using Vapi Voice AI and ElevenLabs Text-to-Speech, improving screening speed by 60% and reducing manual effort</li>
-                </ul>
-            </div>
-        </section>
-        
-        <!-- EDUCATION -->
-        <section class="section">
-            <h2 class="section-title">Education</h2>
-            <div class="education-block">
-                <strong>The Neotia University</strong> — Bachelor of Technology in Robotics & Automation<br>
-                CGPA: 8.54/10 | 2021 – 2024
-            </div>
-        </section>
-        
-        <!-- CERTIFICATIONS -->
-        <section class="section">
-            <h2 class="section-title">Certifications</h2>
-            <div class="content-block">
-                <ul class="bullet-list">
-                    <li>HackerRank 3-Star in Problem Solving and Python</li>
-                    <li>AI-ML Certifications from AILABS</li>
-                </ul>
-            </div>
-        </section>
+<div class="container">
+
+<!-- HEADER -->
+<header class="header">
+    <h1>UTSAB GHOSH</h1>
+    <div class="contact-info">
+        Backend Software Engineer | Node.js | Python | APIs<br>
+        Kolkata, India | <a href="mailto:utsab.ghosh96@gmail.com">utsab.ghosh96@gmail.com</a> | +91 9564449544<br>
+        <a href="https://linkedin.com/in/utsab96">linkedin.com/in/utsab96</a> |
+        <a href="https://github.com/Utsab96">github.com/Utsab96</a>
     </div>
+</header>
+
+<!-- SUMMARY -->
+<section class="section">
+<h2 class="section-title">Professional Summary</h2>
+Backend Software Engineer with 1+ years of experience designing, developing, and optimizing scalable RESTful APIs
+and microservices using Node.js, Express.js, Python (FastAPI, Flask), and PostgreSQL. Proven ability to improve
+system performance, automate business workflows using AI integrations, and deploy containerized services with Docker.
+Experienced in CI/CD pipelines, cloud databases, and collaborating with cross-functional teams in production environments.
+</section>
+
+<!-- CORE COMPETENCIES -->
+<section class="section">
+<h2 class="section-title">Core Competencies</h2>
+<ul class="bullet-list">
+    <li>Backend API Development</li>
+    <li>Microservices Architecture</li>
+    <li>Database Design & Optimization</li>
+    <li>AI Integration & Automation</li>
+    <li>System Performance Optimization</li>
+    <li>Cross-functional Collaboration</li>
+</ul>
+</section>
+
+<!-- SKILLS -->
+<section class="section">
+<h2 class="section-title">Technical Skills</h2>
+
+<div class="skill-category"><strong>Programming Languages:</strong> JavaScript (ES6+), Python, SQL</div>
+<div class="skill-category"><strong>Backend Development:</strong> Node.js, Express.js, FastAPI, Flask, RESTful APIs, MVC Architecture</div>
+<div class="skill-category"><strong>Databases:</strong> PostgreSQL, MongoDB, Supabase, Firebase</div>
+<div class="skill-category"><strong>System Design:</strong> Microservices Architecture, API Design, Authentication, Authorization</div>
+<div class="skill-category"><strong>DevOps & Cloud:</strong> Docker, CI/CD (GitHub Actions, GitLab CI, Jenkins), Cron Jobs</div>
+<div class="skill-category"><strong>Testing & Quality:</strong> Jest, Unit Testing, SonarQube, Code Reviews</div>
+<div class="skill-category"><strong>AI & Automation:</strong> OpenAI API, Gemini API, Perplexity API, Eleven Labs, Vapi</div>
+<div class="skill-category"><strong>Computer Vision:</strong> YOLO-World, YOLO11VN-Face, OpenCV (RTSP Stream Processing)</div>
+</section>
+
+<!-- EXPERIENCE -->
+<section class="section">
+<h2 class="section-title">Professional Experience</h2>
+
+<div class="job-details">
+    <div>
+        <div class="company-title">Web Spiders India Pvt. Ltd.</div>
+        <div class="job-title">Software Engineer</div>
+    </div>
+    <div class="location-date">Dec 2024 – Present</div>
+</div>
+
+<ul class="bullet-list">
+    <li>Designed and developed 25+ RESTful APIs using Node.js, Express.js, and PostgreSQL supporting scalable backend services.</li>
+    <li>Improved API response time by 35% through query optimization, indexing, and efficient data modeling.</li>
+    <li>Integrated Supabase, Firebase, and Monday.com APIs to enable real-time data synchronization.</li>
+    <li>Built AI-driven automation pipelines using OpenAI, Gemini, and Perplexity APIs processing 10k+ records daily.</li>
+    <li>Developed AI-powered voice interview workflows using Vapi Voice AI and Eleven Labs reducing manual screening effort by 60%.</li>
+    <li>Implemented cron-based background jobs for scheduling, notifications (FCM), and system maintenance.</li>
+    <li>Developed object detection and face recognition modules using YOLO-World and YOLO11VN-Face with Flask/FastAPI.</li>
+    <li>Containerized backend services using Docker and improved code quality using Jest and SonarQube.</li>
+</ul>
+</section>
+
+<!-- PROJECTS -->
+<section class="section">
+<h2 class="section-title">Projects</h2>
+
+<div class="project-header">Gecko – AI Recruiter Automation Platform</div>
+<div class="project-meta">Apr 2024 – Present</div>
+
+<ul class="bullet-list">
+    <li>Developed backend microservices using Node.js and PostgreSQL to handle candidate data processing.</li>
+    <li>Implemented voice-based interview automation using Vapi Voice AI and Eleven Labs TTS.</li>
+    <li>Improved candidate screening speed by 60% and reduced recruiter workload.</li>
+</ul>
+</section>
+
+<!-- EDUCATION -->
+<section class="section">
+<h2 class="section-title">Education</h2>
+<div class="education-block">
+<strong>The Neotia University</strong><br>
+B.Tech in Robotics & Automation — CGPA: 8.54<br>
+2021 – 2024
+</div>
+</section>
+
+<!-- CERTIFICATIONS -->
+<section class="section">
+<h2 class="section-title">Certifications</h2>
+<ul class="bullet-list">
+    <li>HackerRank 3★ in Python and Problem Solving</li>
+    <li>AI & Machine Learning Certifications – AILABS</li>
+</ul>
+</section>
+
+</div>
 </body>
 </html>
